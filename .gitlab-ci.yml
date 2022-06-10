@@ -134,4 +134,4 @@ deploy:
     # - cp "$FEATURED_IMAGE_PATH" featured.png
     - git add .
     - git commit -m "CI commit"
-    - git push -u origin master
+    - git push -u origin main
