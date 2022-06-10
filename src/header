@@ -10,7 +10,7 @@ summary = "The work plan of the EU-funded project *Brain Networks in Learning*"
 abstract = "The work plan of the EU-funded project *Brain Networks in Learning*"
 authors = ["Vassilis Kehayas"]
 hasPlotly = false
-doi = ""
+doi = "10.5281/zenodo.6630894"
 sourceFile = "src/bnl-framework.Rmd"
 
 +++
