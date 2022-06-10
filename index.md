@@ -137,7 +137,7 @@ the creation of a neuropsychological diagnostic test in future work.
 ## Acknowledgements
 
 <p style="max-width:30%; float:left">
-<img src="../img/5000200-commission-cl.jpg" style="margin-top:0.75em; margin-bottom:1rem">
+<img src="img/5000200-commission-cl.jpg" style="margin-top:0.75em; margin-bottom:1rem">
 </p>
 <p style="width:70%; float:right">
 This project has received funding from the European Union’s Horizon 2020
