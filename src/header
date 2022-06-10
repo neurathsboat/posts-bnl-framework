@@ -5,7 +5,7 @@ date = 2022-06-10
 lastmod = 2022-06-10
 draft = false
 
-tags = ["neuroscience", "functional connectivity", "BNL", "fMRI", "Bayesian", "mixed_model", "regression"]
+tags = ["neuroscience", "functional_connectivity", "BNL", "fMRI", "Bayesian", "mixed_model", "regression"]
 summary = "The work plan of the EU-funded project *Brain Networks in Learning*"
 abstract = "The work plan of the EU-funded project *Brain Networks in Learning*"
 authors = ["Vassilis Kehayas"]
