@@ -17,6 +17,13 @@ knitr::opts_chunk$set(fig.path = "img/",
                       fig.asp = 0.5)
 ```
 
+I have been awarded a Marie-Curie Individual Fellowship
+to study the changes in functional connectivity
+between cortical areas of the human brain
+during verbal learning.
+In this post, I will describe the idea behind the project
+and some of the tools that we plan to use.
+
 The brain's cerebral cortex has been described as a distributed network 
 that supports the formation of associative memories
 [@braitenbergCortexStatisticsGeometry1998].
@@ -30,7 +37,7 @@ the occurrence of a persistent memory trace
 by measuring brain activity through functional magnetic resonance imaging (fMRI)
 during rest periods following the learning task
 [@guerra-carrilloRestingStateFMRIWindow2014; @tambiniEnhancedBrainCorrelations2010; @tambiniPersistenceHippocampalMultivoxel2013; @vankesterenPersistentSchemadependentHippocampalneocortical2010].
-However, less is known about how the memory trace is formed during learning.
+However, we know less about how the memory trace forms during learning.
 It is known that the strength of some brain areas' signal 
 changes during learning depending on the task
 [@andreasenIIPETStudies1995; @behrensLearningValueInformation2007; @cheinNeuroimagingStudiesPracticerelated2005; @karuzaNeuralCorrelatesStatistical2013; @kopelmanPETActivationMedial1998; @raichlePracticerelatedChangesHuman1994; @saykinFunctionalDifferentiationMedial1999; @sigmanTopDownReorganizationActivity2005; @strangeDissociableHumanPerirhinal2002].
@@ -57,49 +64,46 @@ Our goal is to study the changes in functional connectivity
 between cortical areas as the subjects learn to perform the task.
 
 We will administer a version of the VLT 
-adapted for visual presentation of the word lists
-to healthy human subjects while assessing their brain activity with fMRI.
-The subjects will be presented with a distractor list of 20 words 
-with instructions to silently read it.
-Afterwards, the subjects will be presented with a target list of 20 words
-and will be instructed to memorize them in 5 consecutive learning blocks.
-The subject's learning rate will be evaluated after each block.
-Additionally, cortical activity during rest periods will be recorded 
-at the beginning and end of the learning task.
-By comparing the activity associated with
-the epochs of the two different lists' presentation, 
+adapted for visual presentation of the word lists 
+to healthy human subjects while assessing their brain activity with fMRI. 
+We will present to the subjects two distractor lists, 
+each consisting of 25 words, with instructions to silently read them. 
+Afterwards, we will show them a target list of 25 words 
+with instructions to memorize them in 5 consecutive learning blocks. 
+We will evaluate their learning rate after each block.
+Additionally, we will record brain activity during rest periods 
+at the beginning and end of the learning task. 
+By comparing the cortical brain activity associated 
+with the epochs of the two different lists’ presentation, 
 we will detect the changes in functional connectivity 
 related to the engagement in the learning task.
 
-Standard routines will be used for data preprocessing
+We will use standard routines for data preprocessing
 [@antypaAnxietyDepressionSeverity2021; @simosNeuralFoundationsOvert2017].
-Cortical areas will be segmented using 
-local-global parcellation of the cerebral cortex
-to identify functionally homogeneous and spatially restricted units,
-and to reduce the dimensionality of the data
+We will segment cortical areas using local-global parcellation
+to identify functionally homogeneous and spatially restricted units
+and reduce the dimensionality of the data
 [@schaeferLocalGlobalParcellationHuman2018].
-The data will be analyzed with Bayesian multi-level regression models
-[@gelmanDataAnalysisUsing2006],
-a very powerful generative analytical framework 
-within which we can efficiently construct the model 
-that our data require 
-and still provide interpretable results 
+We will analyze the data with Bayesian multi-level regression models
+[@gelmanDataAnalysisUsing2006]
+to construct generative models that respect our data structure. 
+An additional advantage of such models is that they provide interpretable estimates 
 as opposed to competing machine-learning techniques, 
 most of which need non-negligible effort to interpret.
-In particular, we will exploit the distributional flexibility 
+Furthermore, we will exploit the distributional flexibility 
 that this framework offers in combination with multi-membership modelling
 that takes into account that a given area participates in multiple pairs
 [@chenIntegrativeBayesianApproach2019]
 to estimate functional connectivity between pairs of cortical areas across time.
-The subjects' age and educational level will be included 
+We will include the subjects' age and educational level
 as confounding predictor variables 
 to adjust the functional connectivity estimates.
-The obtained estimates of functional connectivity will be used
-to provide a graph theoretical description of the network's evolution.
+We will use the obtained estimates of functional connectivity
+to provide a graph-theoretical description of the network's evolution.
 
-Our main hypothesis is that beyond the changes 
+Our primary hypothesis is that beyond the changes 
 in individual areas’ activity during learning, 
-we will observe major changes in functional connectivity between cortical areas.
+we will observe pronounced changes in functional connectivity between cortical areas.
 We expect to detect the transition of cortical activity
 from the sub-network associated with task engagement
 to the sub-network associated with retrieval
